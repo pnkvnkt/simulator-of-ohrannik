@@ -1,0 +1,403 @@
+/* === ПРИКОЛЫ === */
+
+.bc-color {
+  background-color: #17212B;
+}
+.bc-color__dark {
+  background-color: #0e1621;
+}
+
+.wrapper {
+  margin: auto;
+  max-width: 1250px;
+  padding: 0 25px;
+}
+
+.wrapper__content {
+  margin-left: 130px;
+}
+
+/* .wrapper обертка ограничитель,
+   .wrapper__content обертка для сдвига основного контента вправо от заголовков */
+
+@mixin text__heading{
+  font-size: 48px;
+  line-height: 141%;
+  font-family: 'Didact Gothic', sans-serif;
+  font-weight: 400;
+}
+
+@mixin text__regular {
+  font-size: 32px;
+  line-height: 131%;
+  font-family: 'Didact Gothic', sans-serif;
+  font-weight: 400;
+}
+
+.text__blue {
+  color: #63d9ff;
+}
+
+
+/* === RESET === */
+
+*::after,
+*::before,
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6, p, a, li{
+  margin: 0;
+  color: #FFFFFF;
+}
+
+a{
+    text-decoration: none;
+}
+
+/* ===== INTRO ===== */
+
+.wrapper__intro {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+.intro {
+  display: flex;
+  align-items: center;
+
+  img {
+    margin-right: 60px;
+  }
+
+  h1 {
+    @include text__heading();
+    width: 420px;
+  }
+}
+
+/* ===== SUGGESTIONS  ===== */
+
+.suggestions {
+  padding: 100px 0;
+
+  h3 {
+    @include text__heading();
+    margin-bottom: 20px;
+  }
+
+  ol {
+    li {
+      @include text__regular();
+    }
+  }
+}
+
+/* ===== REALISATION ===== */
+
+.realisation {
+  padding: 100px 0 120px;
+  position: relative;
+  
+  .realisation_header-wrapper {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 80px;
+
+    h3 {
+      @include text__heading();
+    }
+
+    img {
+      margin-left: auto;
+    }
+  }
+
+  ol {
+    margin-bottom: 80px;
+    li {
+      @include text__regular();
+    }
+  }
+
+  .realisation_img-wrapper {
+    display: flex;
+    align-items: end;
+    gap: 10px;
+    p {
+      @include text__regular();
+      font-size: 24px;
+    }
+  }
+
+  .realisation_phone {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+  }
+}
+
+/* ===== FUNCTIONS ===== */
+
+.functions {
+  padding-top: 100px;
+
+  h3 {
+    @include text__heading();
+    margin-bottom: 20px;
+  }
+
+  ol {
+    li {
+      @include text__regular();
+    }
+  }
+}
+
+/* ===== MANUAL  CALLS ===== */ 
+
+.manual-calls {
+  padding: 100px 0;
+
+  h3 {
+    @include  text__heading();
+    margin-bottom: 80px;
+  }
+
+  .wrapper__content {
+    display: flex;
+    align-items: center;
+  }
+
+  .manual-calls_phone {
+    position: relative;
+  }
+
+  .phone_notion {
+    position: absolute;
+    top: 410px;
+    left: 159px;
+  }
+  
+  .phone_functions {
+    position: absolute;
+    left: -22px;
+    bottom: 140px;
+  }
+
+  .wrapper__symbols {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 400px;
+    gap: 100px;
+
+    img {
+      height: 77px;
+
+      &:nth-child(2) {
+        width: 77px;
+      }
+    }
+  }
+}
+
+/* ===== РАСПИСАНИЕ ===== */
+
+.schedule {
+  padding: 100px 0;
+  display: flex;
+  flex-wrap: wrap;
+
+  h3 {
+    @include text__heading();
+    margin-bottom: 80px;
+    flex-shrink: 0;
+    flex-basis: 100%;
+  }
+
+  figure {
+    margin-left: 40px;
+    figcaption {
+      @include text__regular();
+      color: #FFFFFF;
+      width: 500px;
+    }
+  }
+}
+
+/* ===== CHANGES ===== */
+
+.changes {
+  padding: 100px 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+
+  h3 {
+    @include text__heading();
+    margin-bottom: 80px;
+    flex-shrink: 0;
+    flex-basis: 100%;
+  }
+
+  .changes_phone {
+    width: 400px;
+  }
+
+  .changes_comands {
+    width: 750px;
+    height: 560px;
+    margin-left: 50px;
+  }
+}
+
+/* ===== ROLES ===== */
+.roles {
+  display: flex;
+  padding: 100px 0 50px;
+  position: relative;
+
+  .roles_left {
+    display: flex;
+    flex-direction: column;
+    margin-right: 40px;
+
+    h3 {
+      @include text__heading();
+      margin-bottom: 50px;
+    }
+
+    img:nth-child(3) {
+        width: 386px;
+        margin: 50px auto 0;
+    }
+  }
+
+  .roles_right {
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+
+    img:first-of-type {
+      width: 396px;
+      margin-left: auto;
+      margin-bottom: auto;
+    }
+  }   
+}
+
+/* LINE */
+
+.roles::after {
+  content: '';
+  width: 100%;
+  height: 5px;
+  position: absolute;
+  bottom: 0px;
+  background-color: rgba(35, 54, 81, 0.29);
+  border-radius: 24px;
+}
+
+/* ===== MONITORING ===== */
+
+.monitoring {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 50px 0 100px;
+
+  h3 {
+    @include text__heading();
+    flex: 0 0 100%;
+    margin-bottom: 80px;
+  }
+
+  img:last-of-type {
+    margin-left: 70px;
+    height: 448px;
+  }
+}
+
+/* ===== ADVANTAGES ===== */
+
+.advantages {
+  padding: 100px 0;
+
+  h3 {
+    @include text__heading();
+    margin-bottom: 80px;
+  }
+
+  article {
+    margin: auto;
+    width: 730px;
+    margin-bottom: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+
+    & > * {
+      margin-bottom: 50px;
+    }
+
+    h6 {
+      @include text__regular();
+    }
+
+    p {
+      @include text__regular();
+      font-size: 24px;
+      text-align: center;
+    }
+  }
+}
+
+/* ===== PRICE ===== */
+
+.price {
+  margin-bottom: 100px;
+
+  h3 {
+    @include text__heading();
+  }
+
+  p {
+    @include text__regular();
+    span {
+      font-size: 24px;
+    }
+  }
+}
+
+/* ===== CONTACTS ===== */
+
+.contact {
+  display: flex;
+  align-items: center;
+  padding-bottom: 100px;
+
+  p, a{
+    @include text__regular();
+    font-size: 24px;
+  }
+
+  a {
+    margin-right: 8px;
+    opacity: .7;
+    transition: linear .2s;
+    text-decoration: underline;
+    &:hover {
+      opacity: 1;
+    }
+  }
+}
