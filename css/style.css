@@ -461,3 +461,106 @@ a {
 .contact a:hover {
   opacity: 1;
 }
+
+/* ===== MEDIA ===== */
+@media (max-width: 1200px) {
+  /* === ПРИКОЛЫ === */
+  .wrapper__content {
+    margin-left: 80px;
+  }
+  /* === REALISATION === */
+  .realisation {
+    padding-bottom: 350px;
+  }
+  .realisation .realisation_header-wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-bottom: 50px;
+  }
+  .realisation .realisation_header-wrapper img {
+    margin-left: 0;
+    margin-top: 50px;
+  }
+  .realisation ol {
+    margin-bottom: 50px;
+  }
+  .realisation .realisation_phone {
+    margin: auto;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+  /* === MANUAL  CALLS === */
+  .manual-calls .wrapper__content {
+    margin-left: 30px;
+  }
+  .manual-calls .phone_notion {
+    left: -30px;
+  }
+  .manual-calls .wrapper__symbols {
+    margin: auto;
+  }
+  /* ===== РАСПИСАНИЕ ===== */
+  .schedule {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .schedule figure {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: 50px;
+    margin-left: 0;
+  }
+  .schedule figure figcaption {
+    width: 80%;
+  }
+  /* ===== CHANGES ===== */
+  .changes {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .changes .changes_comands {
+    margin-left: 0;
+    margin-top: 50px;
+  }
+  /* ===== ROLES ===== */
+  .roles {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .roles .roles_left {
+    margin-right: 0;
+    margin-bottom: 50px;
+  }
+  .roles .roles_right {
+    margin-left: 0;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .roles .roles_right img:first-of-type {
+    margin-left: 0;
+    margin: 50px auto 0;
+  }
+  /* ===== MONITORING ===== */
+  .monitoring {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .monitoring img:first-of-type {
+    margin-bottom: 50px;
+  }
+  /* ===== ADVANTAGES ===== */
+  /* ===== PRICE ===== */
+  /* ===== CONTACTS ===== */
+}

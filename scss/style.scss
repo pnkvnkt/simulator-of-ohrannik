@@ -401,3 +401,118 @@ a{
     }
   }
 }
+
+
+
+/* ===== MEDIA ===== */
+
+
+
+@media (max-width : 1200px) {
+
+  /* === ПРИКОЛЫ === */
+
+  .wrapper__content {
+    margin-left: 80px;
+  }
+
+  /* === REALISATION === */
+
+  .realisation {
+    padding-bottom: 350px;
+    .realisation_header-wrapper {
+      flex-direction: column;
+      margin-bottom: 50px;
+      img {
+        margin-left: 0;
+        margin-top: 50px;
+      }
+    }
+
+    ol {
+      margin-bottom: 50px;
+    }
+
+    .realisation_phone {
+      margin: auto;
+      position: absolute;
+      left: 0; 
+      right: 0;
+      bottom: 0; 
+    }
+  }
+
+  /* === MANUAL  CALLS === */ 
+
+  .manual-calls {
+    .wrapper__content {
+      margin-left: 30px;
+    }
+
+    .phone_notion {
+      left: -30px;
+    }
+
+    .wrapper__symbols {
+      margin: auto;
+    }
+  }
+
+  /* ===== РАСПИСАНИЕ ===== */
+
+  .schedule {
+    justify-content: center;
+    figure {
+      display: flex;
+      margin-top: 50px;
+      margin-left: 0;
+      figcaption {
+        width: 80%;
+      }
+    }
+  }
+
+  /* ===== CHANGES ===== */
+
+.changes {
+  justify-content: center;
+  .changes_comands {
+    margin-left: 0;
+    margin-top: 50px;
+  }
+}
+
+/* ===== ROLES ===== */
+
+.roles{
+  flex-direction: column;
+  .roles_left {
+    margin-right: 0;
+    margin-bottom: 50px;
+  }
+  .roles_right {
+    margin-left: 0;
+    flex-direction: column-reverse;
+    img:first-of-type {
+      margin-left: 0;
+      margin: 50px auto 0;
+    }
+  }
+}
+
+/* ===== MONITORING ===== */
+
+.monitoring{
+  justify-content: center;
+
+  img:first-of-type{
+    margin-bottom: 50px;
+  }
+}
+
+/* ===== ADVANTAGES ===== */
+
+/* ===== PRICE ===== */
+
+/* ===== CONTACTS ===== */
+}
